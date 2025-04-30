@@ -20,7 +20,7 @@ if (nota >= 90){
     printf("Bom!\n\n");
 } else if (nota >= 50){
     printf("Aceitavel!\n\n");
-} else if (nota <= 50){
+} else {
     printf("Repita o teste!\n\n");
 }
 }
