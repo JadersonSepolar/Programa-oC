@@ -12,9 +12,9 @@ numerocomputador = rand() % 100 + 1;
 // Início do jogo
 printf(">>> Bem-vindo ao jogo Maior, Menor ou Igual! <<<\n\n");
 printf("Você deve escolher um número e o tipo de comparação.\n");
-printf("M - Maior\n");
-printf("N - Menor\n");
-printf("I - Igual\n");
+printf("+ - Maior\n");
+printf("- - Menor\n");
+printf("= - Igual\n");
 
 // O usuário escolhe o tipo de comparação
 printf("Escolha a comparação: ");
@@ -31,22 +31,19 @@ scanf("%d", &numerojogador);
 // Lógica do jogo
 switch (tipodecomparacao)
 {
-case 'M': // foram criados 2 case, caso o jogador digite a letra maiuscula ou minuscula.
-case 'm':
+case '+': // foram criados 2 case, caso o jogador digite a letra maiuscula ou minuscula.
     printf("\nVocê escolheu a opção Maior.\n");
     resultado = numerojogador > numerocomputador ? 1 : 0;
     printf("Seu numero: %d VS %d Número do PC.\n\n", numerojogador,numerocomputador);
     break;
 
-case 'N':
-case 'n':
+case '-':
     printf("\nVocê escolheu a opção Menor.\n");
     resultado = numerojogador < numerocomputador ? 1 : 0;
     printf("Seu numero: %d VS %d Número do PC.\n\n", numerojogador,numerocomputador);
     break;
 
-case 'I':
-case 'i':
+case '=':
     printf("\nVocê escolheu a opção Igual.\n");
     resultado = numerojogador == numerocomputador ? 1 : 0;
     printf("Seu numero: %d VS %d Número do PC.\n\n", numerojogador,numerocomputador);
