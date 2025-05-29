@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 void recursivo(int numero){
-    if (numero > 0){
+    if (numero < 10){
+    
+        recursivo(numero + 1);
         printf("%d \n", numero);
-
-        recursivo(numero - 1);
     }
 }
 
